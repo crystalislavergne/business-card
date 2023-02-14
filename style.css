@@ -39,7 +39,7 @@ body {
 }
 
 .scrolling-image {
-  background: url("./background-image.jpg") repeat-x;
+  background: url("Assets/morning-bg.jpg") repeat-x;
   height: 750px;
   width: 7680px;
   animation: slide 3s linear infinite;
@@ -47,11 +47,10 @@ body {
 
 /* the main container */
 
-
 .back-side {
 width: 462px;
 height: 264px;
-position: sticky;
+position: static;
 /* adjust this to space out the cards */
 margin: 20px auto;
 overflow: hidden;
@@ -109,7 +108,7 @@ padding-top: 0px;
 .st1{display:inline;}
 
 svg{
-fill:purple;
+fill:rgb(0, 0, 0);
 }
 
 #icon-fill{
@@ -119,7 +118,7 @@ fill:none;
 
 
 .svg-interaction:hover{
-fill:rgb(118, 27, 237);
+fill:rgb(247, 199, 123);
 opacity: 0.5;
 animation:pulse; 
 animation-duration: 2s;
