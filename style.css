@@ -1,57 +1,126 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+
+  }
+
 
 
 body {
-    background-color: gray;
+  background-image: url('assets/morning-bg.jpg');
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: center;
+  Background-size: cover;
 }
+<div class="background-image">
+ <div class="scrolling-image"></div>
+</div>
+
+.scrolling-image-container {
+  overflow: hidden;
+}
+
+.scrolling-image {
+  background: url("./background-image.jpg") repeat-x;
+  height: 750px;
+  width: 7680px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); /* The image width */
+  }
+}
+
+.scrolling-image {
+  background: url("./background-image.jpg") repeat-x;
+  height: 750px;
+  width: 7680px;
+  animation: slide 3s linear infinite;
+}
+
 /* the main container */
 
-.front-side,
+
 .back-side {
-  width: 390px;
-  height: 220px;
-  /* display: grid; */
-  /* each student will customize based on their grid */
-  /* grid-template-columns: 2% 96% 2%;
-  grid-template-rows: 4% 92% 4%; */
-  position: relative;
-  /* adjust this to space out the cards */
-  margin: 20px auto;
-  overflow: hidden;
-  box-shadow: 2px 5px 15px 0px #17161694;
-  background-color:antiquewhite;
+width: 462px;
+height: 264px;
+position: sticky;
+/* adjust this to space out the cards */
+margin: 20px auto;
+overflow: hidden;
+box-shadow: 2px 5px 15px 0px #17161694;
+background-color:white;
 }
 
-.front-side{
-  background-image: url('cloud.svg');
-}
+/* .front-side{
+} */
 
 .name{
-  display: grid;
-  position: relative;
-  margin-left:30px;
-  padding: 10px
+display: grid;
+position: relative;
+margin-left:30px;
+padding: 10px
 
 }
 
 .secondary{
-  display: grid;
-  position: relative;
-  margin-left:30px;
+display: grid;
+position: relative;
+margin-left:30px;
 
 }
 
+.icon-container{
+
+width:80%;
+margin: 0 auto;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr;
+grid-template-areas: 
+"a b c";
+grid-gap: 10px;
+}
+
+/* .circle{
+background-image: url("/assets/circle.svg");
+grid-area: a;
+} */
 
 
 /* h3{
-  margin-bottom: 0px;
+margin-bottom: 0px;
+}
+h5{
+margin-top: 0px;
+padding-top: 0px;
+} */
+
+
+/* svg styling */
+/* .st0{display:none;} */
+.st1{display:inline;}
+
+svg{
+fill:purple;
 }
 
-h5{
-  margin-top: 0px;
-  padding-top: 0px;
-} */
+#icon-fill{
+fill:none;
+}
+
+
+
+.svg-interaction:hover{
+fill:rgb(118, 27, 237);
+opacity: 0.5;
+animation:pulse; 
+animation-duration: 2s;
+}
