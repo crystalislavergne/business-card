@@ -15,35 +15,7 @@ body {
   background-position: center;
   Background-size: cover;
 }
-<div class="background-image">
- <div class="scrolling-image"></div>
-</div>
 
-.scrolling-image-container {
-  overflow: hidden;
-}
-
-.scrolling-image {
-  background: url("./background-image.jpg") repeat-x;
-  height: 750px;
-  width: 7680px;
-}
-
-@keyframes slide {
-  0% {
-    transform: translate(0);
-  }
-  100% {
-    transform: translate(-3840px); /* The image width */
-  }
-}
-
-.scrolling-image {
-  background: url("Assets/morning-bg.jpg") repeat-x;
-  height: 750px;
-  width: 7680px;
-  animation: slide 3s linear infinite;
-}
 
 /* the main container */
 
