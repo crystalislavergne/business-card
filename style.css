@@ -13,15 +13,46 @@ body {
   background-repeat: repeat;
   background-attachment: scroll;
   background-position: center;
-  Background-size: cover;
+  background-size: cover;
+}
+
+
+<div class="scrolling-image-container">
+ <div class="scrolling-image"></div>
+</div>
+
+.scrolling-image-container {
+  overflow: hidden;
+}
+
+.scrolling-image {
+  background: url("assets/morning-bg.jpg") repeat-x;
+  height: 750px;
+  width: 7680px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); /* The image width */
+  }
+}
+
+.scrolling-image {
+  background: url("assets/morning-bg.jpg") repeat-x;
+  height: 750px;
+  width: 7680px;
+  animation: slide 3s linear infinite;
 }
 
 
 /* the main container */
 
 .back-side {
-width: 462px;
-height: 264px;
+width: 600px;
+height:300px;
 position: static;
 /* adjust this to space out the cards */
 margin: 20px auto;
@@ -30,12 +61,16 @@ box-shadow: 2px 5px 15px 0px #17161694;
 background-color:white;
 }
 
-/* .front-side{
+/* .boxContainer{
 } */
+.logo-container {
+  <img src="logo.png"
+}
+
 
 .name{
 display: grid;
-position: relative;
+position: center;
 margin-left:30px;
 padding: 10px
 
@@ -43,7 +78,7 @@ padding: 10px
 
 .secondary{
 display: grid;
-position: relative;
+position: center;
 margin-left:30px;
 
 }
