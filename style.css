@@ -46,7 +46,16 @@ body {
   width: 7680px;
   animation: slide 3s linear infinite;
 }
-
+/* mobile grid */
+/* this code will be used when the screen is 1200px or less */
+@media screen and (max-width: 1200px) {
+  body{
+   transform-origin: top;
+   transform: scale(1.5);
+   margin:0 auto;
+  }
+ 
+   }
 
 /* the main container */
 
