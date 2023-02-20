@@ -13,7 +13,7 @@
 @media screen and (max-width: 1200px) {
   body{
    transform-origin: top;
-   transform: scale(1);
+   transform: scale(0.5);
    margin:0 auto;
   }
  
@@ -40,17 +40,18 @@ h2 {
 }
 
 .text-container {
-  text-align: center;
+  text-align: relative;
+  left: 200px;
 }
 
 .icon-container{
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
+  grid-column-gap: 35px;
   grid-row-gap: 10px;
-  top: 100px;
-  left:150px;
+  top: 175px;
+  right:25px;
   position: relative;
   width:80%;
   /* margin: 0 auto; */
@@ -63,16 +64,18 @@ h2 {
 .instagram{
   position: relative;
   left:60px;
+  bottom:10px;
 }
 
 .linkedin{
   position: relative;
   left:60px;
+  bottom:10px;
 }
 .name-container{
   position: relative;
-  top:143px;
-  left:198px;
+  bottom:110px;
+  left:203px;
 }
 
 p {
@@ -92,8 +95,6 @@ fill:rgb(0, 0, 0);
 .svg-interaction:hover{
 fill:rgb(248, 157, 11);
 opacity: 0.5;
-animation:pulse; 
-animation-duration: 2s;
 }
 
 body {
